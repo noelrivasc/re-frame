@@ -17,7 +17,7 @@ computing stages of the "materialised view" that is ultimately DOM.  Together th
 Data flows through **The Signal Graph**.
 
 `app-db` is the ground truth of a re-frame app, and it is at the root of a 
-Directed Acyclic Graph (DAG) called the **Signal Graph**.  At the other extent of this 
+Directed Acyclic Graph (DAG) called the **Signal Graph**.  At the other end of this 
 graph - at the leaves - are the `View Functions`, which calculate hiccup.
 
 Typically, the Signal Graph is not deep, with only a few interior layers of nodes
