@@ -54,7 +54,7 @@ They are the language of your re-frame system.
 An `event handler` (function), which we'll name `h`, is now called to 
 compute the `effect` of the event `[:delete-item 2486]`.
 
-On startup, re-frame apps register handlers for events using `reg-event-fx`. So,
+On startup, re-frame apps register handlers for events using `reg-event-fx` (or `reg-event-db` for simpler cases). So,
 in our imaginary app, because `h` is the handler function for `:delete-item` events, 
 it must have been registered like this:
 ```clj 
